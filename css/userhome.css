@@ -1,0 +1,48 @@
+html{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+ 
+#body{
+    background-color: #CBF3F0;
+     width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.navbar
+{
+    background-color: #2EC4B6;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.card-color{
+    background: linear-gradient(180deg, #00B4D8 0%, #0096C7 100%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-color1{
+    background: linear-gradient(180deg, #FF8500 0%, #FF9100 100%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info{
+    float: right;
+}
+
+.btn-color{
+    border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(90deg, #118AB2 0%, #006586 100%);
+  box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+  padding: 8px 40px;
+}
