@@ -1,0 +1,26 @@
+html{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+ 
+#body{
+    background-color: #CBF3F0;
+     width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.navbar
+{
+    background-color: #2EC4B6;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.card-color{
+    background: linear-gradient(98.8deg, #03045E 0%, #023E8A 100%);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
