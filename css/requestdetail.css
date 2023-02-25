@@ -17,6 +17,19 @@ html{
     border-bottom-right-radius: 15px;
     
 }
+.card-color{
+    background: linear-gradient(98.8deg, #03045E 0%, #023E8A 100%);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tbox{
+    background-color: #ffff;
+}
+.location{
+    border-radius: 10px;
+}
 
 .btn-color{
     border-radius: 30px;
@@ -26,23 +39,4 @@ html{
   background: linear-gradient(90deg, #118AB2 0%, #006586 100%);
   box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
   padding: 8px 40px;
-}
-
-.addphoto::file-selector-button {
-    display: none;
-  }
-  .location{
-    width: 100%;
-    background-color: #fff;
-    color: #000;
-    padding: 4px 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-.addphoto{
-    display: none;
 }
