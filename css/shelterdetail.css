@@ -38,3 +38,11 @@ html{
     margin-left: 10px;
     margin-right: 10px;
 }
+.img-slids{
+    width: 40%;
+}
+@media (min-width: 992px) {
+    .img-slids{
+        width: 20%;
+    }
+ }
