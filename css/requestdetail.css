@@ -4,17 +4,29 @@ html{
     overflow-x: hidden;
 }
  
-#body{
+body{
     background-color: #CBF3F0;
      width: 100%;
     height: 100vh;
     overflow-x: hidden;
 }
+.icon-body{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 6px;
+
+}
 .navbar
 {
+    width: 100%;
     background-color: #2EC4B6;
+    overflow: hidden;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     
 }
 .card-color{
@@ -27,16 +39,72 @@ html{
 .tbox{
     background-color: #ffff;
 }
-.location{
-    border-radius: 10px;
+.div-b{
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    height: 40px;
 }
 
 .btn-color{
     border-radius: 30px;
+    width: 80px;
   font-size: 13px;
   font-weight: 600;
   border: none;
   background: linear-gradient(90deg, #118AB2 0%, #006586 100%);
   box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
-  padding: 8px 40px;
 }
+.request-img{
+    width: 100%;
+    border-radius: 10px;
+}
+@media (min-width: 768px) {
+    .request-img{
+        width: 100%;
+    }
+}
+.request-img:hover {opacity: 0.7;}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  #myImg:hover {opacity: 0.7;}
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  /* The Close Button */
+  .close {
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
