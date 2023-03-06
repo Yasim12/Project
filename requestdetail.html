@@ -4,50 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>requests</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/requestdetail.css">
+    <title>request2</title>
+    
 </head>
-<body id="body">
-    <div class="container-fluid">
-        <div class="row">
-           <div class="navbar col-12 col-md-12 col-sm-12">
-               <img src="./images/back.png" alt="bell" width="15px">
-                <div class="mt-3 text-white"><h2 class="">Requests</h2></div>
-                <img src="./images/profile.png" alt="profile" width="22px">
+<body>
+    <div class="navbar container-fluid">
+        <div class="icon-body">
+            <img src="./images/back.png" alt="bell" width="15px">
+        </div>
+        <div>
+            <h2 class="">Requests</h2>
+        </div>
+        <div class="icon-body">
+            <img src="./images/profile.png" alt="profile" width="22px">
+        </div>
+    </div>
+
+    <div class="card card-color card-body">
+        <div>
+            <div>
+                <p class="text-white">Request from : </p>
+            </div>
+            <div class="row m-3">
+                <div class="div-b col-md-6">
+                    Name
+                </div>
+                <div class="div-b col-md-6">
+                    phonenumber
+                </div>
             </div>
         </div>
-    </div>
-    <div class="mt-3"> 
-        <div class="card card-color card-body row">
-            <div class="col-12 col-md-6" ><img src="./images/strayhomeimg1.png" alt=""  style="width: 95%;height: 95%;border-radius: 20px; margin:0px 10px;"></div>
-            <div class="card-body row col-12 col-md-6 row">
-                <div class="card mt-2 col-12 location">
-                    <div class="card-body ">Location</div>
+
+        <div style="height: 1px;background-color: rgb(255, 255, 255);" class="m-3"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="p-3 align-items-center">
+                    <img id="myImg" src="./images/strayhomeimg1.png" class="request-img " alt="">
                 </div>
-                <div class="text-center mt-2 mb-2"><img src="./images/line 2.png" alt="div" width="60%"></div>
-                <p class="text-white mb-2 col-12">no of dogs</p>
-                <div class="card mt-2 col-5 location">
-                    <div class="card-body ">adult:1</div>
+            </div>
+            <div class="col-md-9">
+                <div style="height: 1px;background-color: rgb(255, 255, 255);" class="m-3 d-md-none"></div>
+                <div>
+                    <div>
+                        <p class="text-white">Location : </p>
+                    </div>
+                    <div>
+                        <div class="div-b">
+                            Location
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="card mt-2 col-5 location " >
-                    <div class="card-body ">puppies:3</div>
+                <div style="height: 1px;background-color: rgb(255, 255, 255);" class="m-3 d-md-none"></div>
+                <div>
+                    <div>
+                        <p class="text-white">Number of Dogs : </p>
+                    </div>
+                    <div class="row pr-3 pl-3" >
+                        <div class="div-b col-6">
+                            Adult
+                        </div>
+                        <div class="div-b col-6">
+                            Puppy
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center mt-2 mb-2"><img src="./images/line 2.png" alt="div" width="60%"></div>
-                <p class="text-white mb-2 col-12">additional details</p>
-                <div class="card mt-2 col-12 location " >
-                    <div class="card-body "></div>
+                <div style="height: 1px;background-color: rgb(255, 255, 255);" class="m-3 d-md-none"></div>
+                <div>
+                    <div>
+                        <p class="text-white">Additional Details : </p>
+                    </div>
+                    <div>
+                        <textarea rows="4" style="width: 100% ;"></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mt-3 row">
-            <div class="col-5"><button type="submit" class="btn btn-color">accept</button></div>
-            <div class="col-2"></div>
-            <div class="col-5"><button type="submit" class="btn btn-color">history</button></div>
+        <div style="height: 1px;background-color: rgb(255, 255, 255);" class="m-3"></div>
+
+        <div class="row p-3">
+            <div class="col-6 text-center">
+                <button type="submit" class="btn-color btn">Accept</button>
+            </div>
+            <div class="col-6 text-center">
+                <button type="submit" class="btn-color btn">Deny</button>
+            </div>
         </div>
+        
     </div>
-    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+      <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
